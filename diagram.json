@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "author": "Gautam Ahuja",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": -18.66, "left": 207.78, "attrs": {} },
+      {
+        "type": "wokwi-max7219-matrix",
+        "id": "matrix1",
+        "top": -120.39,
+        "left": -26.4,
+        "attrs": { "chain": "4" }
+      }
+    ],
+    "connections": [
+      [ "matrix1:GND", "uno:GND.1", "black", [ "h0" ] ],
+      [ "matrix1:DIN", "uno:11", "green", [ "h0" ] ],
+      [ "matrix1:CS", "uno:10", "purple", [ "h0" ] ],
+      [ "matrix1:CLK", "uno:13", "orange", [ "h0" ] ],
+      [ "matrix1:V+", "uno:5V", "red", [ "h179.51", "v302.01", "h-118.15" ] ]
+    ]
+  }
